@@ -78,7 +78,7 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
 |---|---|---|---|---|---|---|---|---|---|---|---|
 |IO2 | IO6 |  IO7 | IO10 | GND | IO4 | IO8 | IO5 | IO9 | USB D- | USB D+ | GND |
 
-![NM-CYD-C5-Pinout](Documention/pics/NM-CYD-C5-pinout-800.jpg)
+![NM-CYD-C5-Pinout](Documention/pics/nm-cyd-c5-pinout.jpg)
 
 ![NM-CYD-C5 detail](Documention/pics/nm-cyd-c5-detail.jpg)
 
