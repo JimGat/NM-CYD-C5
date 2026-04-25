@@ -104,6 +104,7 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
  - [Brucefw](https://github.com/BruceDevices/firmware)
  - [ESP32Marauder](https://github.com/RockBase-iot/ESP32Marauder)
  - [Rogue-Radar](https://github.com/RockBase-iot/Rogue-Radar-CYD)
+ - [CYM (Cheap Yellow Monster)](https://github.com/JimGat/CYM-NM28C5)
 
    Rogue Radar is a handheld ESP32 firmware that combines multiple wireless and utility tools into one rotary-driven interface.
  - [Launcher](https://github.com/RockBase-iot/Launcher)
