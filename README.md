@@ -82,6 +82,15 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
 
 ![NM-CYD-C5 detail](Documention/pics/nm-cyd-c5-detail.jpg)
 
+### The NM-CYD-C5 Colorful Special Edition
+
+[RockBase IoT Colorful Special Edition](https://rockbase.shop/products/nm-cyd-c5-colorful) will publish soon, compatible with the normal NM-CYD-C5.
+
+![NM-CYD-C5-Color](Documention/pics/nm-cyd-c5-color.jpg)
+
+![NM-CYD-C5-Colorful](Documention/pics/nm-cyd-c5-colorful.png)
+
+
 ## Compare with ESP32-2432S028
 
 | FEATURE | STANDARD CYD (ESP32) | NM-CYD-C5|
@@ -104,15 +113,25 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
  - [Brucefw](https://github.com/BruceDevices/firmware)
  - [ESP32Marauder](https://github.com/RockBase-iot/ESP32Marauder)
  - [Rogue-Radar](https://github.com/RockBase-iot/Rogue-Radar-CYD)
+    
+    Rogue Radar is a handheld ESP32 firmware that combines multiple wireless and utility tools into one rotary-driven interface.
  - [CYM (Cheap Yellow Monster)](https://github.com/JimGat/CYM-NM28C5)
 
-   Rogue Radar is a handheld ESP32 firmware that combines multiple wireless and utility tools into one rotary-driven interface.
+    Cheap Yellow Monster is a portable, touchscreen-driven WiFi security toolkit running on the NM-CYD-C5.
+
  - [Launcher](https://github.com/RockBase-iot/Launcher)
 
    Application Launcher for M5Stack, Lilygo, CYDs, Marauder and ESP32 devices. 
+
+ - [ESP-Claw](https://github.com/espressif/esp-claw)
+
+   ESP-Claw is Espressif's Chat Coding AI agent framework for IoT devices. It defines device behavior through conversation and completes the full loop of sensing, decision-making, and execution locally on Espressif chips. Inspired by the OpenClaw concept and reimplemented in C, ESP-Claw is lightweight, intelligent, and continuously evolving.
+   ![](Documention/pics/esp-claw.png)
 
 If you just want flash the firmware only, you can try [NMMiner Web Flasher](https://flash.nmminer.com), or [NMIoT Web Flasher](https://flash.nmiot.net), choose device type nm-cyd-c5.
 
 ## Ongoing Projects
 
  - [HaleHound-CYD](https://github.com/JesseCHale/HaleHound-CYD)
+ - [ESP32-KillerBee](https://github.com/RockBase-iot/ESP32-KillerBee)
+ 
