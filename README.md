@@ -78,6 +78,12 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
 |---|---|---|---|---|---|---|---|---|---|---|---|
 |IO2 | IO6 |  IO7 | IO10 | GND | IO4 | IO8 | IO5 | IO9 | USB D- | USB D+ | GND |
 
+### WS2812 LEDC and Screen Backlight
+| NM-CYD-C5 | PIN |
+| :------: | :---: |
+| IO25 | Display BL |
+| IO27 | WS2812 RGB LED |
+
 ![NM-CYD-C5-Pinout](Documention/pics/nm-cyd-c5-pinout.jpg)
 
 ![NM-CYD-C5 detail](Documention/pics/nm-cyd-c5-detail.jpg)
@@ -128,10 +134,13 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
    ESP-Claw is Espressif's Chat Coding AI agent framework for IoT devices. It defines device behavior through conversation and completes the full loop of sensing, decision-making, and execution locally on Espressif chips. Inspired by the OpenClaw concept and reimplemented in C, ESP-Claw is lightweight, intelligent, and continuously evolving.
    ![](Documention/pics/esp-claw.png)
 
+   *New Version Released*: esp-claw 0.3.0 on NM-CYD-C5 updated, merge new function from `espressif/master`.
+
 If you just want flash the firmware only, you can try [NMMiner Web Flasher](https://flash.nmminer.com), or [NMIoT Web Flasher](https://flash.nmiot.net), choose device type nm-cyd-c5.
 
 ## Ongoing Projects
 
  - [HaleHound-CYD](https://github.com/JesseCHale/HaleHound-CYD)
  - [ESP32-KillerBee](https://github.com/RockBase-iot/ESP32-KillerBee)
+ - [ESP32DualBandWardriver](https://github.com/justcallmekoko/ESP32DualBandWardriver)
  
