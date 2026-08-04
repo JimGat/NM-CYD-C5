@@ -1,12 +1,15 @@
 # NM-CYD-C5
-Cheap Yellow Display with ESP32-C5, support dual-band Wi-Fi 6 / BLE 5 / Thread /Zigbee.
+
+English | [中文](README_zh.md)
+
+NM-CYD-C5 is a Cheap Yellow Display (CYD) based on ESP32-C5, supporting dual-band Wi-Fi 6 / BLE 5 / Thread / Zigbee.
 There is an ESP32 with a built in 320 x 240 2.8" LCD display with a touch screen like the [ESP32-Cheap-Yellow-Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display), the default LCD display driver is ST7789, also can change to ILI9341 driver.
 
 # Features
 The NM-CYD-C5 has the following features:
  - ESP32-C5-WROOM-1, 16MB Flash and 8MB PSRAM
  - 320 x 240 LCD Display ( 2.8")
- - Touch Screen
+ - Resistive Touch Screen
  - ESP32-C5 USB Type-C port and USB Type-C to UART Port (CH340), for powering and programming
  - SD Card Slot, RGB LED and some additional pins
  - Fully compatible dimensions and interfaces with ESP32-Cheap-Yellow-Display, enabling seamless replacement.
@@ -25,10 +28,10 @@ The NM-CYD-C5 has the following features:
 |**Wireless Protocols**| Wi-Fi 6(802.11az) 2.4/5GHz + BLE 5.3 + IEEE 802.15.4|
 |**Display**| 2.8" TFT, 240*320, ST7789, Touch Screen|
 |**Memory**| 16MB Flash + 8MB PSRAM|
-|**Interface**| 2xUSB-C, GPIO, Micro Slot|
+|**Interface**| 2xUSB-C, GPIO, Micro SD Card Slot|
 
 # Where to buy?
-You can get the NM-CYD-C5 from RockBase Aliexpress and our website, or from NMTech Stores.
+You can get the NM-CYD-C5 from the RockBase IoT AliExpress store, the RockBase IoT official website, or from NMTech Stores.
 
  - [RockBase IoT Store](https://www.aliexpress.com/store/1105401362)
  - [RockBase Shop](https://rockbase.shop/products/nm-cyd-c5)
@@ -36,7 +39,7 @@ You can get the NM-CYD-C5 from RockBase Aliexpress and our website, or from NMTe
  - [NMMiner](https://www.nmminer.com)
 
 # Getting Started With Your NM-CYD-C5
-For details on how to get started with your NM-CYD-C5, please check out the [Setup and Configuration]() page.
+For details on how to get started with your NM-CYD-C5, please check out the [Setup and Configuration](https://wiki.rockbaseiot.com/en/docs/products/nm-cyd-c5/) page.
 
 To work with NM-CYD-C5, you should use the newest espressif32 library, version 3.3.5 or a higher version.
 
@@ -45,12 +48,12 @@ To work with NM-CYD-C5, you should use the newest espressif32 library, version 3
 platform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.36/platform-espressif32.zip ; Arduino 3.3.6
 ```
 
-When you use the TFT_eSPI to work with LCD, you chould and `TFT_eSPI_ESP32_C5.c/h` to Processors, and update `TFT_eSPI.c/h` with `CONFIG_IDF_TARGET_ESP32C5`.
-Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
+When you use TFT_eSPI to work with the LCD, you should add `TFT_eSPI_ESP32_C5.c/h` to the Processors directory, and update `TFT_eSPI.c/h` with `CONFIG_IDF_TARGET_ESP32C5`.
+These files can be found in `Demos\Arduino\libraries\TFT_eSPI`.
 
 ## Pinout of NM-CYD-C5
 
-### Using ST7789 with XPT2046 fo touchscreen, shared the SPI.
+### Using ST7789 with XPT2046 for touchscreen, shared SPI.
 
 | Device  | SCK   | MISO  | MOSI  | CS    | IRQ   |
 | ---     | :---: | :---: | :---: | :---: | :---: |
@@ -66,7 +69,7 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
 ### Extend IO for I2C, `NM-CYD-C5: CN1`:  
 | 1 | 2| 3| 4|
 |---|---|---|---|
-|3.3V | IO9 | IO8 | GND
+|3.3V | IO9 | IO8 | GND |
 
 ### Extend IO，`NM-CYD-C5: P1`:
 | 1 | 2| 3|4|
@@ -76,7 +79,7 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
 ### NM Extend IO: 12Pin FPC interface, `NM-CYD-C5: FPC2`
 | 1 |2|3|4|5|6|7|8|9|10|11|12|
 |---|---|---|---|---|---|---|---|---|---|---|---|
-|IO2 | IO6 |  IO7 | IO10 | GND | IO4 | IO8 | IO5 | IO9 | USB D- | USB D+ | GND |
+|IO2 | IO6 | IO7 | IO10 | GND | IO4 | IO8 | IO5 | IO9 | USB D- | USB D+ | GND |
 
 ### WS2812 LEDC and Screen Backlight
 | NM-CYD-C5 | PIN |
@@ -113,7 +116,7 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
 
 # Supported Projects.
 
-## Already supported Porjects
+## Already Supported Projects
 
  - [NMMiner](https://github.com/NMminer1024/NMMiner)
  - [Brucefw](https://github.com/BruceDevices/firmware)
@@ -136,7 +139,11 @@ Which can found from `Demos\Arduino\libraries\TFT_eSPI`.
 
    *New Version Released*: esp-claw 0.3.0 on NM-CYD-C5 updated, merge new function from `espressif/master`.
 
-If you just want flash the firmware only, you can try [NMMiner Web Flasher](https://flash.nmminer.com), or [NMIoT Web Flasher](https://flash.nmiot.net), choose device type nm-cyd-c5.
+If you just want to flash the firmware, you can try [RockBase IoT Web Flasher](https://flash.rockbaseiot.com) and choose device type nm-cyd-c5.
+
+If you would like your firmware or project to run on the NM-CYD-C5, please contact the RockBase IoT team and we will assist you with adaptation and testing.
+
+For firmware you would like to offer as a download on our Web Flasher, please check out the [ESPWebApps](https://github.com/RockBase-iot/ESPWebApps) project. ESPWebApps is a web application management platform based on ESP32 that allows users to run and manage multiple web applications on the ESP32. With ESPWebApps, you can easily share your projects with NM-CYD-C5 users, making it simple to download, install, update, and run applications on the NM-CYD-C5.
 
 ## Ongoing Projects
 
